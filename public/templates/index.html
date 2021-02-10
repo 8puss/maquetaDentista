@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Dentista</h1></header>
+    <div class="registro">
+        <section>
+            <h2>Registro</h2> <br />
+            <form onsubmit="crearCliente()" id="formulario">
+                <input type="text" placeholder="Correo" id="correo"> <br />
+                <input type="text" placeholder="Nombre" id="nombre"> <br />
+                <input type="text" placeholder="Contraseña" id="contraseña"> <br />
+                <input type="number" placeholder="Edad" id="edad"> <br />
+                <button type="submit" id="botonRegistro">Registro</button> <br />
+            </form>
+        </section>
+    </div>
+    <div class="pago">
+        <section>
+            <h2>Pago</h2> <br />
+            <form action="" method="get">
+                $<input type="number" placeholder="Ingrese su pago" id="pago"> <br />
+            </form>
+            <h2>Cobro</h2> <br />
+            <form action="" method="get">
+                $<input type="number" placeholder="Ingrese su cobro" id="cobro"> <br />
+            </form>
+        </section>
+    </div>
+    <script src="servidor.js"></script>
+    <script src="objetos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
