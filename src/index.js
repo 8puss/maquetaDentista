@@ -8,6 +8,7 @@ var cobro = document.getElementById("cobro");
 var edad = document.getElementById("edad");
 var correo = document.getElementById("correo");
 var clientes = [];
+var dentistas = [];
 
 /* Declaración de eventos */
 nombre.addEventListener("change", inputNombre);
@@ -40,7 +41,7 @@ function crearCliente() {
     document.write("¡Registro completado!");
     document.location.href="/public/templates/index.html";
     clientes.push(cliente);
-    return cliente 
+    return clientes
 }
 
 function inputPago() {
@@ -51,4 +52,11 @@ function inputPago() {
 function inputCobro() {
     cobro = cobro.value;
     return cobro
+}
+
+function crearDentista() {
+    dentista = new Dentista(nombre, contraseña, edad, correo);
+    document.write("¡Registro completo!");
+    dentistas.push(dentista);
+    return dentista
 }
