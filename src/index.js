@@ -2,7 +2,7 @@
 var nombre = document.getElementById("nombre");
 var contraseña = document.getElementById("contraseña")
 var boton = document.getElementById("botonRegistro");
-var signin = document.getElementById("signin");
+var login = document.getElementById("login");
 var pago = document.getElementById("pago");
 var cobro = document.getElementById("cobro");
 var edad = document.getElementById("edad");
@@ -13,7 +13,7 @@ var clientes = [];
 nombre.addEventListener("change", inputNombre);
 contraseña.addEventListener("change", inputContraseña);
 edad.addEventListener("change", inputEdad);
-signin.addEventListener("submit", crearCliente);
+login.addEventListener("submit", crearCliente);
 pago.addEventListener("change", inputPago);
 cobro.addEventListener("change", inputCobro);
 correo.addEventListener("change", inputCorreo);
