@@ -20,41 +20,35 @@ correo.addEventListener("change", inputCorreo);
 
 /* Funciones disparadas en los eventos */
 function inputNombre() {
-    console.log(nombre.value);
     return nombre = nombre.value;
 }
 
 function inputContraseña() {
-    console.log(contraseña.value);
     return contraseña = contraseña.value;
 }
 
 function inputCorreo() {
-    console.log(correo.value);
     return correo = correo.value;
 }
 
 function inputEdad() {
-    console.log(edad.value);
     return edad = edad.value;
 }
 
 function crearCliente() {
     cliente = new Cliente(nombre, contraseña, edad, correo);
-    console.log(cliente);
-    document.write("¡Registro completo!");
+    document.write("¡Registro completado!");
+    document.location.href="/public/templates/index.html";
     clientes.push(cliente);
     return cliente 
 }
 
 function inputPago() {
-    console.log(pago.value);
     pago = pago.value;
     return pago
 }
 
 function inputCobro() {
-    console.log(cobro.value);
     cobro = cobro.value;
     return cobro
 }
