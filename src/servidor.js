@@ -5,3 +5,7 @@ const app = express();
 var path = require('path');
 var http = require("http");
 var PORT = 5000;
+
+app.get('/', function(req, res, next) {
+
+});
