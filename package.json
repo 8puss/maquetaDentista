@@ -2,9 +2,10 @@
   "name": "maquetaDentista",
   "version": "1.0.0",
   "description": "Web app balance de cobro para servicios dentales",
-  "main": "index.js",
+  "main": "/home/dgrm/Documentos/codigo/apps/maquetaDentista/maquetaDentista/src/servidor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node /src/servidor",
+    "dev": "nodemon /src/servidor"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/transpoetico/maquetaDentista/issues"
   },
-  "homepage": "https://github.com/transpoetico/maquetaDentista#readme"
+  "homepage": "https://github.com/transpoetico/maquetaDentista#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
