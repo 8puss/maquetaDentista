@@ -11,6 +11,11 @@ const options = {
     root: PATH.join("../maquetaDentista/public/templates/")
 };
 
+/*agregando archivos estáticos*/ 
+
+app.use('/css', express.static("public/css"));
+app.use('/js', express.static("public/js"));
+
 /*generando peticiones http sin middleware*/
 
 app.get('/', (req, res, next) => {
