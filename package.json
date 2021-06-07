@@ -1,0 +1,32 @@
+{
+  "name": "maquetadentista",
+  "version": "1.0.0",
+  "description": "dentist app on development. This app will allow to its users get a medical history and a payment ledger on one single place.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index",
+    "dev": "nodemon ./src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8puss/maquetaDentista.git"
+  },
+  "keywords": [
+    "app",
+    "web",
+    "site",
+    "dentist"
+  ],
+  "author": "8puss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/8puss/maquetaDentista/issues"
+  },
+  "homepage": "https://github.com/8puss/maquetaDentista#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
