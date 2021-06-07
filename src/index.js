@@ -8,6 +8,7 @@ var cobro = document.getElementById("cobro");
 var edad = document.getElementById("edad");
 var correo = document.getElementById("correo");
 var clientes = [];
+var dentistas = [];
 
 /* Declaración de eventos */
 nombre.addEventListener("change", inputNombre);
