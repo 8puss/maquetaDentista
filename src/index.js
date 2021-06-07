@@ -1,67 +1,55 @@
-/* Declaración de variables DOM */
-var nombre = document.getElementById("nombre");
-var contraseña = document.getElementById("contraseña")
-var boton = document.getElementById("botonRegistro");
-var botonlogin = document.getElementById("botonLogin");
-var formulario = document.getElementById("formulario");
-var pago = document.getElementById("pago");
-var cobro = document.getElementById("cobro");
-var edad = document.getElementById("edad");
-var correo = document.getElementById("correo");
-var clientes = [];
-var dentistas = [];
+/**
+ *Creando servidor con express
+ *Definiendo constantes del servidor e importando express 
+ */
 
-/* Declaración de eventos */
-nombre.addEventListener("change", inputNombre);
-contraseña.addEventListener("change", inputContraseña);
-edad.addEventListener("change", inputEdad);
-formulario.addEventListener("submit", crearCliente);
-pago.addEventListener("change", inputPago);
-cobro.addEventListener("change", inputCobro);
-correo.addEventListener("change", inputCorreo);
+const express = require('express');
+const app = express();
+const PORT = 8000;
+const PATH = require('path');
+const options = {
+    root: PATH.join("../maquetaDentista/public/templates/")
+};
 
-/* Funciones disparadas en los eventos */
-function inputNombre() {
-    console.log(nombre.value);
-    return nombre = nombre.value;
-}
+/*generando peticiones http sin middleware*/
 
-function inputContraseña() {
-    console.log(contraseña.value);
-    return contraseña = contraseña.value;
-}
+app.get('/', (req, res, next) => {
 
-function inputCorreo() {
-    console.log(correo.value);
-    return correo = correo.value;
-}
+    var fileName = "index.html";
+    res.sendFile(fileName, options, function (err) {
+        if (err) {
+            next(err);
+        } else {
+        }   console.log('Sent:', fileName);
+            next();
+    });
+})
 
-function inputEdad() {
-    console.log(edad.value);
-    return edad = edad.value;
-}
+app.get('/login.html', (req, res, next) => {
 
-function crearCliente() {
-    cliente = new Cliente(nombre, contraseña, edad, correo);
-    console.log(cliente);
-    document.write("¡Registro completo! <br /> <a href=\"./login.html\">Inicia Sesión</a>");
-    clientes.push(cliente.nombre);
-    return cliente 
-}
+    var fileName = "login.html";
+    res.sendFile(fileName, options, function (err) {
+        if (err) {
+            next(err);
+        } else {
+        }   console.log('Sent:', fileName);
+            next();
+    });
+})
 
-function inputPago() {
-    console.log(pago.value);
-    pago = pago.value;
-    return pago
-}
+app.get('/singin.html', (req, res, next) => {
 
-function inputCobro() {
-    console.log(cobro.value);
-    cobro = cobro.value;
-    return cobro
-}
+    var fileName = "singin.html";
+    res.sendFile(fileName, options, function (err) {
+        if (err) {
+            next(err);
+        } else {
+        }   console.log('Sent:', fileName);
+            next();
+    });
+})
 
-function iniciarSesion() {
-    /*codigo de inicio de sesión*/
-    console.log("enviar codigo de inicio de sesion");
-}
+const server = app.listen(PORT, (err) => {
+    if (err) console.log(err);
+    console.log("listening on http://localhost:" + PORT +"/");
+})
