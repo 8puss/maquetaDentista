@@ -2,6 +2,7 @@
 var nombre = document.getElementById("nombre");
 var contraseña = document.getElementById("contraseña")
 var boton = document.getElementById("botonRegistro");
+var botonlogin = document.getElementById("botonLogin");
 var formulario = document.getElementById("formulario");
 var pago = document.getElementById("pago");
 var cobro = document.getElementById("cobro");
@@ -58,4 +59,9 @@ function inputCobro() {
     console.log(cobro.value);
     cobro = cobro.value;
     return cobro
+}
+
+function iniciarSesion() {
+    /*codigo de inicio de sesión*/
+    console.log("enviar codigo de inicio de sesion");
 }
