@@ -15,17 +15,19 @@
                 <a href="/">Home</a>
             </nav>
         </div>
-        <div class="login">
+        <div class="registro">
             <section>
-                <h2>Inicia Sesión</h2> <br />
-                <form onsubmit="iniciarSesion()" id="formularioLogin">
+                <h2>Registro</h2> <br />
+                <form onsubmit="crearCliente()" id="formulario">
                     <input type="text" placeholder="Correo" id="correo"> <br />
+                    <input type="text" placeholder="Nombre" id="nombre"> <br />
                     <input type="text" placeholder="Contraseña" id="contraseña"> <br />
-                    <button type="submit" id="botonLogin">Inicia Sesión</button> <br />
+                    <input type="number" placeholder="Edad" id="edad"> <br />
+                    <button type="submit" id="botonRegistro">Registro</button> <br />
                 </form>
                 <span>
                     <p>
-                        ¿Aún no tienes cuenta? <a href="./signin">Regístrate</a>
+                        ¿Ya tienes cuenta? <a href="./login">Inicia Sesión</a>
                     </p>
                 </span>
             </section>
@@ -36,7 +38,7 @@
             2021
         </footer>
     </div>
-    <script src="../js/eventLogin.js"></script>
+    <script src="../js/eventSignin.js"></script>
     <script src="../js/objetos.js"></script>
 </body>
 </html>

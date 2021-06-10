@@ -30,41 +30,47 @@ app.get('/', (req, res, next) => {
     });
 })
 
-app.get('/login', (req, res, next) => {
+setTimeout(() => {
+    app.get('/login', (req, res, next) => {
 
-    var fileName = "login.html";
-    res.sendFile(fileName, options, function (err) {
-        if (err) {
-            next(err);
-        } else {
-        }   console.log('Sent:', fileName);
-            next();
-    });
-})
-
-app.get('/singin', (req, res, next) => {
-
-    var fileName = "singin.html";
-    res.sendFile(fileName, options, function (err) {
-        if (err) {
-            next(err);
-        } else {
-        }   console.log('Sent:', fileName);
-            next();
-    });
-})
-
-app.get('/ledger', (req, res, next) => {
-
-    var fileName = "ledger.html";
-    res.sendFile(fileName, options, function (err) {
-        if (err) {
-            next(err);
-        } else {
-        }   console.log('Sent:', fileName);
-            next();
+        var fileName = "login.html";
+        res.sendFile(fileName, options, function (err) {
+            if (err) {
+                next(err);
+            } else {
+            }   console.log('Sent:', fileName);
+                next();
+        });
     })
-})
+}, 500);
+
+setTimeout(() => {
+    app.get('/signin', (req, res, next) => {
+
+        var fileName = "signin.html";
+        res.sendFile(fileName, options, function (err) {
+            if (err) {
+                next(err);
+            } else {
+            }   console.log('Sent:', fileName);
+                next();
+        });
+    })
+}, 500);
+
+setTimeout(() => {
+    app.get('/ledger', (req, res, next) => {
+
+        var fileName = "ledger.html";
+        res.sendFile(fileName, options, function (err) {
+            if (err) {
+                next(err);
+            } else {
+            }   console.log('Sent:', fileName);
+                next();
+        })
+    })
+}, 500);
 
 const server = app.listen(PORT, (err) => {
     if (err) console.log(err);
