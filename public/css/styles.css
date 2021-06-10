@@ -7,15 +7,19 @@ html {
     font-size: 62.5%;
 }
 
+header {
+    padding: 2rem;
+}
+
+header .header {
+    font-size: 4rem;
+}
+
 body {
     font-size: 1.8rem;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-header {
-    padding: 2rem;
 }
 
 nav {
@@ -41,6 +45,10 @@ button {
 
 a:link {
     text-decoration: none;
+}
+
+.ledger {
+    width: 100%;
 }
 
 footer {

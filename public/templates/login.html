@@ -8,7 +8,7 @@
     <title>DentistApp</title>
 </head>
 <body>
-    <header><h1>DentistApp</h1></header>
+    <header><h1 class="header">DentistApp</h1></header>
     <main>
         <div>
             <nav>
@@ -18,14 +18,14 @@
         <div class="login">
             <section>
                 <h2>Inicia Sesión</h2> <br />
-                <form onsubmit="iniciarSesion()" id="formulario">
+                <form onsubmit="iniciarSesion()" id="formularioLogin">
                     <input type="text" placeholder="Correo" id="correo"> <br />
                     <input type="text" placeholder="Contraseña" id="contraseña"> <br />
                     <button type="submit" id="botonLogin">Inicia Sesión</button> <br />
                 </form>
                 <span>
                     <p>
-                        ¿Aún no tienes cuenta? <a href="./singin.html">Regístrate</a>
+                        ¿Aún no tienes cuenta? <a href="./singin">Regístrate</a>
                     </p>
                 </span>
             </section>
@@ -34,7 +34,7 @@
     <footer>
         2021
     </footer>
-    <script src="../js/eventListener.js"></script>
+    <script src="../js/eventLogin.js"></script>
     <script src="../js/objetos.js"></script>
 </body>
 </html>

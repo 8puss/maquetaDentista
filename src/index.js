@@ -30,7 +30,7 @@ app.get('/', (req, res, next) => {
     });
 })
 
-app.get('/login.html', (req, res, next) => {
+app.get('/login', (req, res, next) => {
 
     var fileName = "login.html";
     res.sendFile(fileName, options, function (err) {
@@ -42,7 +42,7 @@ app.get('/login.html', (req, res, next) => {
     });
 })
 
-app.get('/singin.html', (req, res, next) => {
+app.get('/singin', (req, res, next) => {
 
     var fileName = "singin.html";
     res.sendFile(fileName, options, function (err) {
@@ -52,6 +52,18 @@ app.get('/singin.html', (req, res, next) => {
         }   console.log('Sent:', fileName);
             next();
     });
+})
+
+app.get('/ledger', (req, res, next) => {
+
+    var fileName = "ledger.html";
+    res.sendFile(fileName, options, function (err) {
+        if (err) {
+            next(err);
+        } else {
+        }   console.log('Sent:', fileName);
+            next();
+    })
 })
 
 const server = app.listen(PORT, (err) => {
