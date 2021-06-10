@@ -9,12 +9,28 @@ html {
 
 header {
     padding: 2rem;
-    background-color:   rgb(163, 226, 255);
     
 }
 
-header .header {
-    font-size: 4rem;
+.brand_name_conteiner {
+    font-size: 3rem;
+    width: 80%;
+    display: inline-block;
+}
+
+.logo_conteiner {
+    min-width: 5rem;
+    min-height: 5rem;
+    max-width: 7rem;
+    max-height: 7rem;  
+    display: inline-block;
+}
+
+.logo_header {
+    min-width: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
 }
 
 body {
@@ -69,7 +85,6 @@ button {
     overflow: scroll;
     padding: 30px;
     position: relative;
-    background-color:   rgb(163, 226, 255);
 }
 .carousel__container {
     white-space: nowrap;

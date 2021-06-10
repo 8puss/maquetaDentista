@@ -15,6 +15,7 @@ const options = {
 
 app.use('/css', express.static("public/css"));
 app.use('/js', express.static("public/js"));
+app.use('/img', express.static("public/img"));
 
 /*generando peticiones http sin middleware*/
 
