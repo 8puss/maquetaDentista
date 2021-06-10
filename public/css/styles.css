@@ -9,6 +9,8 @@ html {
 
 header {
     padding: 2rem;
+    background-color:   rgb(163, 226, 255);
+    
 }
 
 header .header {
@@ -20,11 +22,30 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: cornflowerblue;
+}
+
+.nav_conteiner {
+    padding: 0;
+    width: 100%;
+    position: relative;
 }
 
 nav {
     padding: 1.5rem;
 }
+
+.nav_conteiner_home {
+    border: .3rem;
+    border-radius: 5px;
+    border-color: rgb(131, 131, 240);
+    min-width: 5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    padding: 5px;
+    background-color:   rgb(163, 226, 255);
+}
+
 
 p {
     padding: 1rem;
@@ -41,6 +62,72 @@ button {
     background-color: gray;
     border-radius: 3px;
     font-size: 1.2rem;
+}
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    background-color:   rgb(163, 226, 255);
+}
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px; 
+}
+
+.carousel__item {
+    background-color: gainsboro;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.carousel__item:hover ~ .carousel__item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.acc_op {
+    width: 100%;
+    position: relative;
+}
+
+.acc_op_conteiner {
+    padding: 5rem;
+    min-width: 15rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc_op_signin {
+    margin: .5rem;
+    padding: 1rem;
+    min-width: 10rem;
+    background-color:   rgb(163, 226, 255);
+}
+
+.acc_op_login {
+    margin: .5rem;
+    padding: 1rem;
+    min-width: 10rem;
+    background-color:   rgb(163, 226, 255);
 }
 
 a:link {
