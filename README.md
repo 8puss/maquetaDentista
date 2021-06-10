@@ -7,7 +7,7 @@ Web app historial médico dental y control de pagos en un solo un lugar.
 Ejecutar servidor local:
 
 ~~~
-npm start index
+npm run start
 ~~~
 
 Usualmente esto abre una nueva pestaña en el navegador, en su defecto abrir navegador de preferencia y escribir:
