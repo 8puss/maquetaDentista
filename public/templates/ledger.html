@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DentistApp</title>
+</head>
+<body>
+    <header><h1 class="header">DentistApp</h1></header>
+    <main>
+        <div>
+            <nav>
+                <a href="/">Home</a>
+            </nav>
+        </div>
+        <table class="ledger">
+            <tr>
+                <th>Fecha</th>
+                <th>Descripción</th> 
+                <th>Monto</th>
+                <th>Balance</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>01/03/21</td>
+                <td>Se hizo una extración</td>
+                <td>$300</td>
+                <td>$0</td>
+                <td>No hay</td>
+            </tr>
+        </table>
+        <div class="pago">
+            <section>
+                <h2>Pago</h2> <br />
+                <form action="" method="get">
+                    $<input type="number" placeholder="Ingrese su pago" id="pago"> <br />
+                </form>
+                <h2>Cobro</h2> <br />
+                <form action="" method="get">
+                    $<input type="number" placeholder="Ingrese su cobro" id="cobro"> <br />
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        8pus | 2021
+    </footer>
+    <script src="../js/eventLedger.js"></script>
+    <script src="../js/objetos.js"></script>
+</body>
+</html>
