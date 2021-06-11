@@ -4,6 +4,14 @@
         margin-left: 3rem;
     }
 
+    .brand_name_conteiner {
+        width: 50%;
+    }
+
+    .carousel {
+        overflow: hidden;
+    }
+
     .carousel__item {
         width: 20rem;
         height: 25rem;
