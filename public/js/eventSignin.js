@@ -40,6 +40,7 @@ function inputEdad() {
 function crearCliente() {
     cliente = new Cliente(nombre, contraseña, edad, correo);
     console.log(cliente);
+    alert();
     document.write("¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>");
     clientes.push(cliente.nombre);
     return cliente 
