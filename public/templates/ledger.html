@@ -11,49 +11,61 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="" alt="">
+        <div class="logo_conteiner">
+            <img src="/img/dentist-logopng.png" alt="" class="logo_header">
         </div>
-        <div>
+        <div class="brand_name_conteiner">
             <h1>DentistApp</h1>
         </div>
-    </header>
-    <main>
         <div class="nav_conteiner">
             <nav>
                 <div class="nav_conteiner_home">
                     <a href="/">Home</a>
                 </div>
+                <div class="nav_conteiner_home">
+                    <a href="/">Home</a>
+                </div>
+                <div class="nav_conteiner_home">
+                    <a href="/">Home</a>
+                </div>
             </nav>
         </div>
-        <table class="ledger">
-            <tr>
-                <th>Fecha</th>
-                <th>Descripción</th> 
-                <th>Monto</th>
-                <th>Balance</th>
-                <th>Observaciones</th>
-            </tr>
-            <tr>
-                <td>01/03/21</td>
-                <td>Se hizo una extración</td>
-                <td>$300</td>
-                <td>$0</td>
-                <td>No hay</td>
-            </tr>
-        </table>
-        <div class="pago">
-            <section>
+    </header>
+    <main>
+        <section class="ledger">
+            <div class="ledger-conteiner">
+                <table class="ledger-tab">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th> 
+                        <th>Monto</th>
+                        <th>Balance</th>
+                        <th>Observaciones</th>
+                    </tr>
+                    <tr>
+                        <td>01/03/21</td>
+                        <td>Se hizo una extración</td>
+                        <td>$300</td>
+                        <td>$0</td>
+                        <td>No hay</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="transaccion">
+            <div class="pago-conteiner">
                 <h2>Pago</h2> <br />
                 <form action="" method="get">
                     $<input type="number" placeholder="Ingrese su pago" id="pago"> <br />
                 </form>
+            </div>
+            <div class="cobro-conteiner">
                 <h2>Cobro</h2> <br />
                 <form action="" method="get">
                     $<input type="number" placeholder="Ingrese su cobro" id="cobro"> <br />
                 </form>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <div class="footer_conteiner">
         <footer>

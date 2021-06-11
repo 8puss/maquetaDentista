@@ -5,6 +5,7 @@ var edad = document.getElementById("edad");
 var correo = document.getElementById("correo");
 var contraseña = document.getElementById("contraseña");
 var formulario = document.getElementById("formulario");
+var tipo = document.getElementById("tipo");
 var clientes = [];
 var dentistas = [];
 

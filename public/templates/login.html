@@ -11,35 +11,39 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="" alt="">
+        <div class="logo_conteiner">
+            <img src="/img/dentist-logopng.png" alt="" class="logo_header">
         </div>
-        <div>
+        <div class="brand_name_conteiner">
             <h1>DentistApp</h1>
         </div>
-    </header>
-    <main>
         <div class="nav_conteiner">
             <nav>
                 <div class="nav_conteiner_home">
                     <a href="/">Home</a>
                 </div>
+                <div class="nav_conteiner_home">
+                    <a href="/">Home</a>
+                </div>
+                <div class="nav_conteiner_home">
+                    <a href="/">Home</a>
+                </div>
             </nav>
         </div>
-        <div class="login">
-            <section>
+    </header>
+    <main>
+        <section class="login">
+            <div class="login-conteiner">
                 <h2>Inicia Sesión</h2> <br />
                 <form onsubmit="iniciarSesion()" id="formularioLogin">
                     <input type="text" placeholder="Correo" id="correo"> <br />
                     <input type="text" placeholder="Contraseña" id="contraseña"> <br />
                     <button type="submit" id="botonLogin">Inicia Sesión</button> <br />
                 </form>
-                <span>
-                    <p>
-                        ¿Aún no tienes cuenta? <a href="./signin">Regístrate</a>
-                    </p>
-                </span>
-            </section>
+            </div>    
+        </section>
+        <div class="acc_op_signin">
+            <p>¿Aún no te registras? </p> <a href="./signin">Regístrate</a>
         </div>
     </main>
     <div class="footer_conteiner">
