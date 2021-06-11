@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    .nav_conteiner_home {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    .carousel__item {
+        width: 20rem;
+        height: 25rem;
+        margin-right: 10px;
+    }
+    
+    .carousel-item__img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+}
+    
+}

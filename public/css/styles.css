@@ -1,3 +1,5 @@
+/*general*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,8 @@
 html {
     font-size: 62.5%;
 }
+
+/*header*/
 
 header {
     padding: 2rem;
@@ -33,18 +37,13 @@ header {
     max-height: inherit;
 }
 
-body {
-    font-size: 1.8rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: cornflowerblue;
-}
+/*nav*/
 
 .nav_conteiner {
     padding: 0;
     width: 100%;
     position: relative;
+    display: inline;
 }
 
 nav {
@@ -56,10 +55,23 @@ nav {
     border-radius: 5px;
     border-color: rgb(131, 131, 240);
     min-width: 5rem;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    max-width: 6rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     padding: 5px;
+    display: inline-block;
     background-color:   rgb(163, 226, 255);
+}
+
+/*body*/
+
+body {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
 }
 
 
@@ -80,25 +92,27 @@ button {
     font-size: 1.2rem;
 }
 
+/*carousel imgs*/
+
 .carousel {
-    width: 100%;
     overflow: scroll;
-    padding: 30px;
+    padding: 3rem;
     position: relative;
 }
 .carousel__container {
     white-space: nowrap;
-    margin: 70px 0px;
-    padding-bottom: 10px; 
+    padding-bottom: 1rem;
+    margin-right: none;
+    padding-right: none; 
 }
 
 .carousel__item {
     background-color: gainsboro;
-    width: 200px;
-    height: 250px;
+    width: 15rem;
+    height: 20rem;
     border-radius: 20px;
-    overflow: hidden;
     margin-right: 10px;
+    overflow: hidden;
     display: inline-block;
     cursor: pointer;
     transition: 450ms all;
@@ -106,7 +120,7 @@ button {
 }
 
 .carousel__item:hover ~ .carousel__item {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(5rem, 0, 0);
 }
 
 .carousel__container:hover .carousel__item {
@@ -114,9 +128,30 @@ button {
 }
 
 .carousel__container:hover .carousel__item:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     opacity: 1;
 }
+
+.carousel-item__img {
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*href login/signin */
 
 .acc_op {
     width: 100%;
@@ -135,6 +170,10 @@ button {
     margin: .5rem;
     padding: 1rem;
     min-width: 10rem;
+    border: .3rem;
+    border-radius: 5px;
+    display: inline-block;
+    border-color: rgb(131, 131, 240);
     background-color:   rgb(163, 226, 255);
 }
 
@@ -142,6 +181,10 @@ button {
     margin: .5rem;
     padding: 1rem;
     min-width: 10rem;
+    border: .3rem;
+    border-radius: 5px;
+    display: inline-block;
+    border-color: rgb(131, 131, 240);
     background-color:   rgb(163, 226, 255);
 }
 
