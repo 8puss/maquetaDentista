@@ -15,6 +15,7 @@ edad.addEventListener("change", inputEdad);
 contraseña.addEventListener("change", inputContraseña);
 correo.addEventListener("change", inputCorreo);
 formulario.addEventListener("submit", crearCliente);
+tipo.addEventListener("change", inputTipo);
 
 /* Funciones disparadas en los eventos */
 function inputNombre() {
@@ -37,10 +38,14 @@ function inputEdad() {
     return edad = edad.value;
 }
 
+function inputTipo() {
+    console.log(tipo.value);
+    return tipo = tipo.value;
+}
+
 function crearCliente() {
-    cliente = new Cliente(nombre, contraseña, edad, correo);
+    cliente = new Cliente(nombre, contraseña, edad, correo, tipo);
     console.log(cliente);
-    alert();
     document.write("¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>");
     clientes.push(cliente.nombre);
     return cliente 

@@ -24,4 +24,21 @@
     object-fit: cover;
 }
     
+.registro-conteiner {
+    margin-right: 20vw;
+    margin-left: 15vw;
+    padding: 4rem;
+    border: none;
+    border-radius: none;
+}
+
+/*login*/
+
+.login-conteiner {
+    margin: 1rem;
+    padding: 4rem;
+    border: none;
+    border-radius: none;
+}
+
 }
