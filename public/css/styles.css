@@ -57,8 +57,9 @@ nav {
 }
 
 .nav_conteiner_home {
-    border: 3rem;
+    border: 2px rgb(223, 223, 223) solid;
     border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
     min-width: 5rem;
     max-width: 6rem;
     margin-right: 1rem;
@@ -66,6 +67,7 @@ nav {
     padding: 10px;
     display: inline-block;
     background-color:   rgb(163, 226, 255);
+    font-size: 2rem;
 }
 
 /*body*/
@@ -86,17 +88,17 @@ p {
 }
 
 input {
-    padding: .5rem;
+    padding: 1rem;
     margin: .5rem;
     border-radius: 10px;
 }
 
 button {
     margin-top: .5rem;
-    padding: .5rem;
+    padding: 1rem;
     border-radius: 10px;
     background-color:rgb(224, 221, 221);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 /*carousel imgs*/
@@ -178,8 +180,9 @@ button {
     margin: .5rem;
     padding: 1rem;
     min-width: 10rem;
-    border: .3rem;
+    border: 2px rgb(223, 223, 223) solid;
     border-radius: 20px;
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
     display: inline-block;
     border-color: rgb(131, 131, 240);
     background-color:   rgb(163, 226, 255);
@@ -189,11 +192,12 @@ button {
     margin: .5rem;
     padding: 1rem;
     min-width: 10rem;
-    border: .3rem;
-    border-radius: 20px;
     display: inline-block;
     border-color: rgb(131, 131, 240);
     background-color:   rgb(163, 226, 255);
+    border: 2px rgb(223, 223, 223) solid;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
 }
 
 a:link {
