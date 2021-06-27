@@ -46,7 +46,7 @@ function inputTipo() {
 function crearCliente() {
     cliente = new Cliente(nombre, contraseña, edad, correo, tipo);
     console.log(cliente);
-    document.write("¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>");
-    clientes.push(cliente.nombre);
+    document.getElementById("register").innerHTML = "¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>";
+    clientes.push(cliente);
     return cliente 
 }

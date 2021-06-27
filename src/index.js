@@ -6,7 +6,7 @@
 const express = require('express');
 const app = express();
 const PORT = 8000;
-const IP = "192.168.100.8";
+const IP = "192.168.1.71";
 const PATH = require('path');
 const options = {
     root: PATH.join("../maquetaDentista/public/templates/")
