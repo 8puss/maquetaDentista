@@ -6,6 +6,7 @@
 const express = require('express');
 const app = express();
 const PORT = 8000;
+const IP = "192.168.100.8";
 const PATH = require('path');
 const options = {
     root: PATH.join("../maquetaDentista/public/templates/")
@@ -73,7 +74,7 @@ setTimeout(() => {
     })
 }, 500);
 
-const server = app.listen(PORT, (err) => {
+const server = app.listen(PORT, IP, (err) => {
     if (err) console.log(err);
-    console.log("listening on http://localhost:" + PORT +"/");
+    console.log("listening on http://" + IP + ":" + PORT +"/");
 })
