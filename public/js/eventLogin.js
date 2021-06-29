@@ -22,7 +22,7 @@ function inputCorreo() {
 }
 
 function iniciarSesion() {
-    document.write("¡Inicio de sesión exitoso! <br /> Consulta tu <a href=\"/ledger\">balance</a>");
+    document.getElementById("login").innerHTML = "¡Inicio de sesión exitoso! <br /> Consulta tu <a href=\"/ledger\">balance</a>"
 }
 
 /*exportar */
