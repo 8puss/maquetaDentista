@@ -14,7 +14,7 @@ nombre.addEventListener("change", inputNombre);
 edad.addEventListener("change", inputEdad);
 contraseña.addEventListener("change", inputContraseña);
 correo.addEventListener("change", inputCorreo);
-formulario.addEventListener("submit", crearCliente);
+formulario.addEventListener("submit", crearUsuario);
 tipo.addEventListener("change", inputTipo);
 
 /* Funciones disparadas en los eventos */
@@ -43,10 +43,19 @@ function inputTipo() {
     return tipo = tipo.value;
 }
 
-function crearCliente() {
-    cliente = new Cliente(nombre, contraseña, edad, correo, tipo);
-    console.log(cliente);
-    document.getElementById("register").innerHTML = "¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>";
-    clientes.push(cliente);
-    return cliente 
+function crearUsuario() {
+    if(tipo == "dentista") {
+        dentista = new Dentista(nombre, contraseña, edad, correo, tipo);
+        console.log(dentista);
+        document.getElementById("register").innerHTML = "¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>";
+        dentistas.push(dentista);
+        return dentista
+    } else {
+        cliente = new Cliente(nombre, contraseña, edad, correo, tipo);
+        console.log(cliente);
+        document.getElementById("register").innerHTML = "¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>";
+        clientes.push(cliente);
+        return cliente
+    }
+    
 }
