@@ -44,7 +44,7 @@ function inputTipo() {
 }
 
 function crearUsuario() {
-    if(tipo == "dentista") {
+    if(tipo.toLowerCase() == "dentista") {
         dentista = new Dentista(nombre, contraseña, edad, correo, tipo);
         console.log(dentista);
         document.getElementById("register").innerHTML = "¡Registro completo! <br /> Regresa al <a href=\"/\">Inicio</a>";
